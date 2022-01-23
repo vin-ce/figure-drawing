@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bundle.css">
+  <title>Template</title>
+</head>
+<body class='home'>
+
+  <div class='setup'>
+    <h1>Figure Drawing Timer</h1>
+  
+    <h2>Load Files</h2>
+    <input type="file" webkitdirectory="" directory="">
+  
+    <h2>Interval</h2>
+    <form class="time">
+      <span class="timeOption">
+        <input type="radio" id="1" name="time" value="1">
+        <label for="1">1 minute</label>
+      </span>
+  
+      <span class="timeOption">
+        <input type="radio" id="3" name="time" value="3" checked>
+        <label for="3">3 minutes</label>
+      </span>
+  
+      <span class="timeOption">
+        <input type="radio" id="5" name="time" value="5">
+        <label for="5">5 minutes</label>
+      </span>
+  
+      <label for="custom" class="timeOption">
+        <input type="radio"  name="time">
+        <input type="number" id="custom" name="time" step="0.5" />
+        <span>minutes</span>
+      </label>
+  
+      <div>
+        <button type="submit">Start</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="drawing hide">
+    <div class='curImage'>
+      <img src="./Gestures/Aaron_small001.jpg" />
+    </div>
+    <div class="info">
+      <div class="timeDisplay">3:00</div>
+      <div class="controls">
+        <div class="prev"><</div>
+        <div class="pause">-</div>
+        <div class="next">></div>
+        <div class="stop">x</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src='bundle.js'></script>
+</html>

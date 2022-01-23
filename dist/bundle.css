@@ -1,0 +1,70 @@
+/* stylus:D:\Vincent Li\OneDrive\Documents\Drawing\figure-drawing\src\styles.styl */
+:root {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-family: "IBM Plex Mono";
+  font-size: 1.6rem;
+  color: #000;
+  overflow: hidden;
+}
+.setup {
+  margin: 3.6rem;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  font-size: 1.6rem;
+  margin-top: 4.8rem;
+}
+button {
+  margin-top: 4.8rem;
+}
+.hide {
+  display: none !important;
+}
+.drawing {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.drawing .curImage {
+  align-self: center;
+}
+.drawing .curImage img {
+  width: 100vw;
+  max-height: 100vh;
+  object-fit: contain;
+}
+.drawing .info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.drawing .info .timeDisplay {
+  padding: 0.6rem;
+  text-align: center;
+}
+.drawing .info .controls {
+  display: flex;
+}
+.drawing .info .controls div {
+  cursor: pointer;
+  border: 1px solid #000;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+.drawing .info .controls div:hover {
+  background-color: #000;
+  color: #fff;
+}
+/*# sourceMappingURL=bundle.css.map */

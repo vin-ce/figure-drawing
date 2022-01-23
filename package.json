@@ -1,0 +1,24 @@
+{
+  "name": "figure-drawing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node build/build.js",
+    "build": "node build/build.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "esbuild-stylus-loader": "^0.3.2",
+    "firebase": "^9.2.0",
+    "stylus": "^0.55.0"
+  },
+  "devDependencies": {
+    "chokidar": "^3.5.2",
+    "esbuild": "^0.13.12",
+    "live-server": "^1.2.1"
+  }
+}
